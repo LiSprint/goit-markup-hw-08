@@ -1,16 +1,19 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features-list {
-  display: flex;
+  // display: flex;
 }
 
 .features-list__item {
-  min-width: 270px;
+  // min-width: 270px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -18,7 +21,7 @@
   background-color: var(--light-backgroung-color);
   border-radius: 4px;
   margin-bottom: 30px;
-  width: 270px;
+  // width: 270px;
   height: 120px;
   display: flex;
   justify-content: center;
