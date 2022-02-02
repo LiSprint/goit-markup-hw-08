@@ -1,0 +1,30 @@
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list__link {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-list__item:not(:last-child) {
+  margin-right: 30px;
+}

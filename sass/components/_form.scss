@@ -1,0 +1,121 @@
+.form__header {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--primary-black-color);
+  margin-bottom: 12px;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin: 0;
+  padding-left: 42px;
+  height: 40px;
+  transition-property: outline-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:focus {
+    outline-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: inherit;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__input--feedback {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.form__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  .form__input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.agreement {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.agreement__label {
+  line-height: 1.71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agreement__icon {
+  margin-right: 7px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  display: inline-block;
+  .agreement__checkbox:checked + & {
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    border: var(--accent-color);
+  }
+}
+
+.agreement__link {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+  margin-left: 5px;
+}
+
+.agreement__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.form__btn {
+  width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 55px 10px 56px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

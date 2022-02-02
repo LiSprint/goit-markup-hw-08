@@ -1,0 +1,32 @@
+.media-list {
+  display: flex;
+  justify-content: center;
+}
+
+.media-list__item{
+  & + &{
+ margin-left: 10px;
+  }
+} 
+
+.media-list__link {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--primary-icon-color);
+  transition-property: background-color, color;
+  transition-duration: var(--transition-duration), var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function),
+    var(--transition-timing-function);
+    &:hover, &:focus{
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+    }
+}
+
+.media-list__icon {
+  fill: currentColor;
+}
