@@ -5,19 +5,21 @@
 }
 
 .footer__wrap {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 }
 
 .footer-contacts {
-  margin-right: 70px;
+  // margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .footer-contacts__link {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   display: block;
 
   transition-property: color;
@@ -34,7 +36,8 @@
 }
 
 .footer-join {
-  margin-right: 93px;
+  // margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .footer-join__header,
@@ -45,10 +48,12 @@
   color: var(--primary-white-color);
   font-size: inherit;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-media {
   display: flex;
+  justify-content: center;
 }
 
 .footer-media__item {
@@ -80,19 +85,22 @@
 }
 
 .footer-signup__wrap {
-  display: flex;
+  // display: flex;
 }
 
 .footer-signup__input {
-  width: 358px;
+  // width: 358px;
   padding: 15px 16px;
-  margin-right: 12px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--dark-background-color);
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
+  width: 100%;
+  display: block;
   &::placeholder {
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
@@ -116,6 +124,8 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-signup__icon {

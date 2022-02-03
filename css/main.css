@@ -63,9 +63,22 @@ body {
   padding-right: 15px;
 }
 
-.container--flex {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -414,8 +427,30 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .features-list__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+  }
 }
 
 .features-list__icon--background {
@@ -605,20 +640,16 @@ body {
   padding-bottom: 60px;
 }
 
-.footer__wrap {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .footer-contacts__link {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   display: block;
   transition-property: color;
   transition-duration: var(--transition-duration);
@@ -634,7 +665,7 @@ body {
 }
 
 .footer-join {
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .footer-join__header,
@@ -645,10 +676,12 @@ body {
   color: var(--primary-white-color);
   font-size: inherit;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-media {
   display: flex;
+  justify-content: center;
 }
 
 .footer-media__item + .footer-media__item {
@@ -677,20 +710,17 @@ body {
   fill: currentColor;
 }
 
-.footer-signup__wrap {
-  display: flex;
-}
-
 .footer-signup__input {
-  width: 358px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--dark-background-color);
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
+  width: 100%;
+  display: block;
 }
 
 .footer-signup__input::placeholder {
@@ -715,6 +745,8 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-signup__icon {
