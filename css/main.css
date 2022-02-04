@@ -438,7 +438,8 @@ body {
   .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -457,7 +458,8 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list__item {
     width: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -572,7 +574,8 @@ body {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -586,12 +589,18 @@ body {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-list__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list__item {
-    margin: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
     width: calc(100% / 2 - 30px);
   }
 }
@@ -677,7 +686,8 @@ body {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -705,9 +715,24 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-.clients-list__item {
-  margin: 15px;
-  flex-basis: calc(100% / 2 - 30px);
+@media screen and (max-width: 1199px) {
+  .clients-list__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item + .clients-list__item {
+    margin-left: 30px;
+  }
 }
 
 .clients-list__icon {
@@ -720,9 +745,45 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 .footer-contacts {
-  margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-right: 70px;
+    text-align: left;
+    width: 231px;
+  }
 }
 
 .footer-contacts__link {
@@ -744,8 +805,22 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-join {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer-join {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    margin-right: 93px;
+  }
 }
 
 .footer-join__header,
@@ -757,6 +832,13 @@ body {
   font-size: inherit;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-join__header,
+  .footer-signup__header {
+    text-align: left;
+  }
 }
 
 .footer-media {
@@ -790,22 +872,44 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-signup__wrap {
+    display: flex;
+  }
+}
+
 .footer-signup__input {
   padding: 15px 16px;
-  margin-bottom: 20px;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--dark-background-color);
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-  width: 100%;
+  width: 450px;
+  height: 50px;
   display: block;
 }
 
 .footer-signup__input::placeholder {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-signup__input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-signup__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-signup__btn {
