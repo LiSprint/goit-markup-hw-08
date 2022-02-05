@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Хедер -->
-    <!-- <header class="header-section">
+    <header class="header-section">
       <div class="container container--flex">
         <nav class="navigation">
           <a class="link logo" href="/">
@@ -62,7 +62,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!--Мейн-->
     <main class="main-section">
       <!--Герой-->
@@ -137,27 +137,42 @@
           <h2 class="services__header">Чем мы занимаемся</h2>
           <ul class="list services-list">
             <li class="services-list__item">
-              <img
-                src="./images/box/box1.jpg"
-                alt="человек работает за компьютером"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/box1.jpg 1x, ./images/box/box1-2x.jpg 2x"
+                  media="(min-width:1200)"
+                />
+                <img
+                  src="./images/box/box1.jpg"
+                  alt="человек работает за компьютером"
+                />
+              </picture>
               <h3 class="services-list__header">Десктопные приложения</h3>
             </li>
             <li class="services-list__item">
-              <img
-                src="./images/box/box2.jpg"
-                alt="человек держит в руках смартфон"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/box2.jpg 1x, ./images/box/box2-2x.jpg 2x"
+                  media="(min-width:1200)"
+                />
+                <img
+                  src="./images/box/box2.jpg"
+                  alt="человек держит в руках смартфон"
+                />
+              </picture>
               <h3 class="services-list__header">Мобильные приложения</h3>
             </li>
             <li class="services-list__item">
-              <img
-                src="./images/box/box3.jpg"
-                alt="человек держит в руках планшет"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/box3.jpg 1x, ./images/box/box3-2x.jpg 2x"
+                  media="(min-width:1200)"
+                />
+                <img
+                  src="./images/box/box3.jpg"
+                  alt="человек держит в руках планшет"
+                />
+              </picture>
               <h3 class="services-list__header">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -169,7 +184,30 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__item">
-              <img src="./images/team/img.jpg" alt="фото мужчины" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-mob/team1-mob-1x.jpg 1x,
+                    ./images/team-mob/team1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab/team1-tab-1x.jpg 1x,
+                    ./images/team-tab/team1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768)"
+                />
+                <source
+                  srcset="
+                    ./images/team-desk/team1-desk-1x.jpg 1x,
+                    ./images/team-desk/team1-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200)"
+                />
+                <img src="./images/team/img.jpg" alt="фото мужчины" />
+              </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__position" lang="en">Product Designer</p>
@@ -227,7 +265,30 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/team/img1.jpg" alt="фото женщины" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-mob/team2-mob-1x.jpg 1x,
+                    ./images/team-mob/team2-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab/team2-tab-1x.jpg 1x,
+                    ./images/team-tab/team2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768)"
+                />
+                <source
+                  srcset="
+                    ./images/team-desk/team2-desk-1x.jpg 1x,
+                    ./images/team-desk/team2-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200)"
+                />
+                <img src="./images/team/img1.jpg" alt="фото женщины" />
+              </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__position" lang="en">Frontend Developer</p>
@@ -285,7 +346,30 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/team/img2.jpg" alt="фото мужчины" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-mob/team3-mob-1x.jpg 1x,
+                    ./images/team-mob/team3-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab/team3-tab-1x.jpg 1x,
+                    ./images/team-tab/team3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768)"
+                />
+                <source
+                  srcset="
+                    ./images/team-desk/team3-desk-1x.jpg 1x,
+                    ./images/team-desk/team3-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200)"
+                />
+                <img src="./images/team/img2.jpg" alt="фото мужчины" />
+              </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__position" lang="en">Marketing</p>
@@ -343,7 +427,30 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/team/img3.jpg" alt="фото мужчины" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-mob/team4-mob-1x.jpg 1x,
+                    ./images/team-mob/team4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab/team4-tab-1x.jpg 1x,
+                    ./images/team-tab/team4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768)"
+                />
+                <source
+                  srcset="
+                    ./images/team-desk/team4-desk-1x.jpg 1x,
+                    ./images/team-desk/team4-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200)"
+                />
+                <img src="./images/team/img3.jpg" alt="фото мужчины" />
+              </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__position" lang="en">UI Designer</p>

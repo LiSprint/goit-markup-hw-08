@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Хедер -->
-    <header class="header-section">
+    <!-- <header class="header-section">
       <div class="container container--flex">
         <nav class="navigation">
           <a class="link logo" href="/">
@@ -60,7 +60,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!--Mейн-->
     <main>
       <section class="projects">
@@ -98,12 +98,20 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img
-                  src="./images/project/img.jpg"
-                  alt="на открытом экране ноутбука
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects-mob/project1-mob-1x.jpg 1x,
+                      ./images/projects-mob/project1-mob-2x.jpg 2x
+                    "
+                    media="(min-width:480)"
+                  />
+                  <img
+                    src="./images/projects-mob/project1-mob-1x.jpg"
+                    alt="на открытом экране ноутбука
             карточки с информацией о сотрудниках"
-                  width="370"
-                />
+                  />
+                </picture>
               </div>
               <div class="project__content">
                 <h2 class="project__name">Технокряк</h2>
@@ -111,93 +119,157 @@
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgone.jpg"
-                alt="два баскетболиста в
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project2-mob-1x.jpg 1x,
+                    ./images/projects-mob/project2-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project2-mob-1x.jpg"
+                  alt="два баскетболиста в
             прыжке борются за мяч"
-                width="370"
-              />
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Постер New Orlean vs Golden Star</h2>
                 <p class="project__type">Дизайн</p>
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgtwo.jpg"
-                alt="логотип ресторана
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project3-mob-1x.jpg 1x,
+                    ./images/projects-mob/project3-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project3-mob-1x.jpg"
+                  alt="логотип ресторана
             морепродуктов"
-                width="370"
-              />
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Ресторан Seafood</h2>
                 <p class="project__type">Приложение</p>
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgthree.jpg"
-                alt="черные наушники"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project4-mob-1x.jpg 1x,
+                    ./images/projects-mob/project4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project4-mob-1x.jpg"
+                  alt="черные наушники"
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Проект Prime</h2>
                 <p class="project__type">Маркетинг</p>
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgfour.jpg"
-                alt="две коробки"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project5-mob-1x.jpg 1x,
+                    ./images/projects-mob/project5-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project5-mob-1x.jpg"
+                  alt="две коробки"
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Проект Boxes</h2>
                 <p class="project__type">Приложение</p>
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgfive.jpg"
-                alt="монитор компьютера с
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project6-mob-1x.jpg 1x,
+                    ./images/projects-mob/project6-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project6-mob-1x.jpg"
+                  alt="монитор компьютера с
             изображением"
-                width="370"
-              />
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Inspiration has no Borders</h2>
                 <p class="project__type">Веб-сайт</p>
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgsix.jpg"
-                alt="открытая книга"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project7-mob-1x.jpg 1x,
+                    ./images/projects-mob/project7-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project7-mob-1x.jpg"
+                  alt="открытая книга"
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Издание Limited Edition</h2>
                 <p class="project__type">Дизайн</p>
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgseven.jpg"
-                alt="белая бирка с
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project8-mob-1x.jpg 1x,
+                    ./images/projects-mob/project8-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project8-mob-1x.jpg"
+                  alt="белая бирка с
             надписью"
-                width="370"
-              />
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Проект LAB</h2>
                 <p class="project__type">Маркетинг</p>
               </div>
             </li>
             <li class="project-list__item">
-              <img
-                src="./images/project/imgeight.jpg"
-                alt="человек печатает на
+              <picture>
+                <source
+                  srcset="
+                    ./images/projects-mob/project9-mob-1x.jpg 1x,
+                    ./images/projects-mob/project9-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480)"
+                />
+                <img
+                  src="./images/projects-mob/project9-mob-1x.jpg"
+                  alt="человек печатает на
             ноутбуке"
-                width="370"
-              />
+                />
+              </picture>
               <div class="project__content">
                 <h2 class="project__name">Growing Business</h2>
                 <p class="project__type">Приложение</p>
