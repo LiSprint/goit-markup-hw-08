@@ -378,15 +378,21 @@ body {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  min-width: 480px;
-  height: 400px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroun.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-2x.jpg);
   background-size: cover;
   background-color: var(--light-background-color);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -397,6 +403,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__btn {
