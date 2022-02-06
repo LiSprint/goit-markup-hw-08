@@ -59,6 +59,97 @@
             >
           </li>
         </ul>
+        <button class="menu-open" type="button" data-menu-open>
+          <svg class="menu-open__icon" height="40" width="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-container">
+            <button class="mob-menu__btn" type="button" data-menu-close>
+              <svg class="mob-menu__close" height="40" width="40">
+                <use
+                  class="mob-menu__icon"
+                  href="./images/icons.svg#icon-close-mobile"
+                ></use>
+              </svg>
+            </button>
+            <div class="mob-top">
+              <ul class="list mob-menu__list">
+                <li class="mob-menu__item">
+                  <a class="link mob-menu__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="link mob-menu__link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a class="link mob-menu__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-bottom">
+              <ul class="list mob-contact">
+                <li class="mob-contact__item">
+                  <a class="link mob-contact__tel" href="tel:+380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mob-contact__item">
+                  <a
+                    class="link mob-contact__mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="list mob-media">
+                <li class="mob-media__item">
+                  <a
+                    class="link mob-media__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram</a
+                  >
+                </li>
+                <li class="mob-media__item">
+                  <a
+                    class="link mob-media__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter</a
+                  >
+                </li>
+                <li class="mob-media__item">
+                  <a
+                    class="link mob-media__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook</a
+                  >
+                </li>
+                <li class="mob-media__item">
+                  <a
+                    class="link mob-media__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!--Mейн-->
@@ -523,5 +614,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
