@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Хедер -->
-    <!-- <header class="header-section">
+    <header class="header-section">
       <div class="container container--flex">
         <nav class="navigation">
           <a class="link logo" href="/">
@@ -60,7 +60,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!--Mейн-->
     <main>
       <section class="projects">
@@ -98,13 +98,36 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
+                <!-- <img
+                  srcset="
+                    ./images/projects-mob/project1-mob-1x.jpg 1x,
+                    ./images/projects-mob/project1-mob-2x.jpg 2x
+                  "
+                  src="./images/projects-mob/project1-mob-1x.jpg"
+                  alt="на открытом экране ноутбука
+            карточки с информацией о сотрудниках"
+                /> -->
                 <picture>
+                  <source
+                    srcset="
+                      ./images/projects-desk/project1-desk-1x.jpg 1x,
+                      ./images/projects-desk/project1-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects-tab/project1-tab-1x.jpg 1x,
+                      ./images/projects-tab/project1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
                   <source
                     srcset="
                       ./images/projects-mob/project1-mob-1x.jpg 1x,
                       ./images/projects-mob/project1-mob-2x.jpg 2x
                     "
-                    media="(min-width:480)"
+                    media="(min-width: 480px)"
                   />
                   <img
                     src="./images/projects-mob/project1-mob-1x.jpg"
@@ -113,7 +136,7 @@
                   />
                 </picture>
               </div>
-              <div class="project__content">
+              <div class="project__content project__content--tab">
                 <h2 class="project__name">Технокряк</h2>
                 <p class="project__type">Веб-сайт</p>
               </div>
@@ -122,10 +145,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project2-desk-1x.jpg 1x,
+                    ./images/projects-desk/project2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project2-tab-1x.jpg 1x,
+                    ./images/projects-tab/project2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project2-mob-1x.jpg 1x,
                     ./images/projects-mob/project2-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/projects-mob/project2-mob-1x.jpg"
@@ -142,10 +179,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project3-desk-1x.jpg 1x,
+                    ./images/projects-desk/project3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project3-tab-1x.jpg 1x,
+                    ./images/projects-tab/project3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project3-mob-1x.jpg 1x,
                     ./images/projects-mob/project3-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width:480px)"
                 />
                 <img
                   src="./images/projects-mob/project3-mob-1x.jpg"
@@ -162,10 +213,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project4-desk-1x.jpg 1x,
+                    ./images/projects-desk/project4-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project4-tab-1x.jpg 1x,
+                    ./images/projects-tab/project4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project4-mob-1x.jpg 1x,
                     ./images/projects-mob/project4-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/projects-mob/project4-mob-1x.jpg"
@@ -181,10 +246,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project5-desk-1x.jpg 1x,
+                    ./images/projects-desk/project5-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project5-tab-1x.jpg 1x,
+                    ./images/projects-tab/project5-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project5-mob-1x.jpg 1x,
                     ./images/projects-mob/project5-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/projects-mob/project5-mob-1x.jpg"
@@ -200,10 +279,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project6-desk-1x.jpg 1x,
+                    ./images/projects-desk/project6-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project6-tab-1x.jpg 1x,
+                    ./images/projects-tab/project6-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project6-mob-1x.jpg 1x,
                     ./images/projects-mob/project6-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/projects-mob/project6-mob-1x.jpg"
@@ -220,10 +313,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project7-desk-1x.jpg 1x,
+                    ./images/projects-desk/project7-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project7-tab-1x.jpg 1x,
+                    ./images/projects-tab/project7-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project7-mob-1x.jpg 1x,
                     ./images/projects-mob/project7-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/projects-mob/project7-mob-1x.jpg"
@@ -239,10 +346,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project8-desk-1x.jpg 1x,
+                    ./images/projects-desk/project8-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project8-tab-1x.jpg 1x,
+                    ./images/projects-tab/project8-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project8-mob-1x.jpg 1x,
                     ./images/projects-mob/project8-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/projects-mob/project8-mob-1x.jpg"
@@ -259,10 +380,24 @@
               <picture>
                 <source
                   srcset="
+                    ./images/projects-desk/project9-desk-1x.jpg 1x,
+                    ./images/projects-desk/project9-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/projects-tab/project9-tab-1x.jpg 1x,
+                    ./images/projects-tab/project9-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/projects-mob/project9-mob-1x.jpg 1x,
                     ./images/projects-mob/project9-mob-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/projects-mob/project9-mob-1x.jpg"
@@ -282,90 +417,92 @@
     <!--Подвал-->
     <footer class="footer">
       <div class="container footer__wrap">
-        <div class="footer-contacts">
-          <a class="link logo logo--reverse" href="/">
-            <span class="logo logo--web">Web</span>Studio</a
-          >
-          <address>
-            <ul class="list footer-contacts__list">
-              <li class="footer-contacts__item">
+        <div class="tablet-wrap">
+          <div class="footer-contacts">
+            <a class="link logo logo--reverse" href="/">
+              <span class="logo logo--web">Web</span>Studio</a
+            >
+            <address>
+              <ul class="list footer-contacts__list">
+                <li class="footer-contacts__item">
+                  <a
+                    class="link footer-contacts__link footer-contacts__link--address"
+                    href="https://goo.gl/maps/CGz93X2TmxTMaEhZA"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a
+                    class="link footer-contacts__link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="link footer-contacts__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-join">
+            <h2 class="footer-join__header">Присоединяйтесь</h2>
+            <ul class="list footer-media">
+              <li class="footer-media__item">
                 <a
-                  class="link footer-contacts__link footer-contacts__link--address"
-                  href="https://goo.gl/maps/CGz93X2TmxTMaEhZA"
+                  class="footer-media__link"
+                  href=""
                   target="_blank"
-                  rel="noreferrer noopener"
+                  rel="noopener noreferrer"
                 >
-                  г. Киев, пр-т Леси Украинки, 26</a
-                >
+                  <svg class="footer-media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
+              <li class="footer-media__item">
                 <a
-                  class="link footer-contacts__link"
-                  href="mailto:info@devstudio.com"
+                  class="footer-media__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  info@devstudio.com</a
-                >
+                  <svg class="footer-media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
-                <a class="link footer-contacts__link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+              <li class="footer-media__item">
+                <a
+                  class="footer-media__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="footer-media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-media__item">
+                <a
+                  class="footer-media__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-join">
-          <h2 class="footer-join__header">Присоединяйтесь</h2>
-          <ul class="list footer-media">
-            <li class="footer-media__item">
-              <a
-                class="footer-media__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-media__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-media__item">
-              <a
-                class="footer-media__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-media__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-media__item">
-              <a
-                class="footer-media__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-media__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-media__item">
-              <a
-                class="footer-media__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-media__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-signup">
           <h2 class="footer-signup__header">Подпишитесь на рассылку</h2>

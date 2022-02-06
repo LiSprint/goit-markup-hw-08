@@ -61,6 +61,93 @@
             >
           </li>
         </ul>
+        <button class="menu-open" type="button">
+          <svg class="menu-open__icon" height="40" width="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mob-menu">
+          <div class="mob-container">
+            <button class="mob-menu__btn" type="button">
+              <svg class="mob-menu__close" height="40" width="40">
+                <use
+                  class="mob-menu__icon"
+                  href="./images/icons.svg#icon-close-mobile"
+                ></use>
+              </svg>
+            </button>
+            <ul class="list mob-menu__list">
+              <li class="mob-menu__item">
+                <a class="link mob-menu__link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="link mob-menu__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a class="link mob-menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <ul class="list mob-contact">
+              <li class="mob-contact__item">
+                <a class="link mob-contact__tel" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contact__item">
+                <a
+                  class="link mob-contact__mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="list mob-media">
+              <li class="mob-media__item">
+                <a
+                  class="link mob-media__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram</a
+                >
+              </li>
+              <li class="mob-media__item">
+                <a
+                  class="link mob-media__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter</a
+                >
+              </li>
+              <li class="mob-media__item">
+                <a
+                  class="link mob-media__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook</a
+                >
+              </li>
+              <li class="mob-media__item">
+                <a
+                  class="link mob-media__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!--Мейн-->
@@ -140,7 +227,7 @@
               <picture>
                 <source
                   srcset="./images/box/box1.jpg 1x, ./images/box/box1-2x.jpg 2x"
-                  media="(min-width:1200)"
+                  media="(min-width: 1200px)"
                 />
                 <img
                   src="./images/box/box1.jpg"
@@ -153,7 +240,7 @@
               <picture>
                 <source
                   srcset="./images/box/box2.jpg 1x, ./images/box/box2-2x.jpg 2x"
-                  media="(min-width:1200)"
+                  media="(min-width: 1200px)"
                 />
                 <img
                   src="./images/box/box2.jpg"
@@ -166,7 +253,7 @@
               <picture>
                 <source
                   srcset="./images/box/box3.jpg 1x, ./images/box/box3-2x.jpg 2x"
-                  media="(min-width:1200)"
+                  media="(min-width: 1200px)"
                 />
                 <img
                   src="./images/box/box3.jpg"
@@ -187,26 +274,29 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team-mob/team1-mob-1x.jpg 1x,
-                    ./images/team-mob/team1-mob-2x.jpg 2x
+                    ./images/team-desk/team1-desk-1x.jpg 1x,
+                    ./images/team-desk/team1-desk-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team-tab/team1-tab-1x.jpg 1x,
                     ./images/team-tab/team1-tab-2x.jpg 2x
                   "
-                  media="(min-width:768)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team-desk/team1-desk-1x.jpg 1x,
-                    ./images/team-desk/team1-desk-2x.jpg 2x
+                    ./images/team-mob/team1-mob-1x.jpg 1x,
+                    ./images/team-mob/team1-mob-2x.jpg 2x
                   "
-                  media="(min-width:1200)"
+                  media="(min-width: 480px)"
                 />
-                <img src="./images/team/img.jpg" alt="фото мужчины" />
+                <img
+                  src="./images/team-mob/team1-mob-1x.jpg"
+                  alt="фото мужчины"
+                />
               </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
@@ -268,26 +358,29 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team-mob/team2-mob-1x.jpg 1x,
-                    ./images/team-mob/team2-mob-2x.jpg 2x
+                    ./images/team-desk/team2-desk-1x.jpg 1x,
+                    ./images/team-desk/team2-desk-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team-tab/team2-tab-1x.jpg 1x,
                     ./images/team-tab/team2-tab-2x.jpg 2x
                   "
-                  media="(min-width:768)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team-desk/team2-desk-1x.jpg 1x,
-                    ./images/team-desk/team2-desk-2x.jpg 2x
+                    ./images/team-mob/team2-mob-1x.jpg 1x,
+                    ./images/team-mob/team2-mob-2x.jpg 2x
                   "
-                  media="(min-width:1200)"
+                  media="(min-width: 480px)"
                 />
-                <img src="./images/team/img1.jpg" alt="фото женщины" />
+                <img
+                  src="./images/team-mob/team2-mob-1x.jpg"
+                  alt="фото женщины"
+                />
               </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Ольга Репина</h3>
@@ -349,26 +442,29 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team-mob/team3-mob-1x.jpg 1x,
-                    ./images/team-mob/team3-mob-2x.jpg 2x
+                    ./images/team-desk/team3-desk-1x.jpg 1x,
+                    ./images/team-desk/team3-desk-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team-tab/team3-tab-1x.jpg 1x,
                     ./images/team-tab/team3-tab-2x.jpg 2x
                   "
-                  media="(min-width:768)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team-desk/team3-desk-1x.jpg 1x,
-                    ./images/team-desk/team3-desk-2x.jpg 2x
+                    ./images/team-mob/team3-mob-1x.jpg 1x,
+                    ./images/team-mob/team3-mob-2x.jpg 2x
                   "
-                  media="(min-width:1200)"
+                  media="(min-width: 480px)"
                 />
-                <img src="./images/team/img2.jpg" alt="фото мужчины" />
+                <img
+                  src="./images/team-mob/team3-mob-1x.jpg"
+                  alt="фото мужчины"
+                />
               </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Николай Тарасов</h3>
@@ -430,26 +526,29 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team-mob/team4-mob-1x.jpg 1x,
-                    ./images/team-mob/team4-mob-2x.jpg 2x
+                    ./images/team-desk/team4-desk-1x.jpg 1x,
+                    ./images/team-desk/team4-desk-2x.jpg 2x
                   "
-                  media="(min-width:480)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/team-tab/team4-tab-1x.jpg 1x,
                     ./images/team-tab/team4-tab-2x.jpg 2x
                   "
-                  media="(min-width:768)"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team-desk/team4-desk-1x.jpg 1x,
-                    ./images/team-desk/team4-desk-2x.jpg 2x
+                    ./images/team-mob/team4-mob-1x.jpg 1x,
+                    ./images/team-mob/team4-mob-2x.jpg 2x
                   "
-                  media="(min-width:1200)"
+                  media="(min-width: 480px)"
                 />
-                <img src="./images/team/img3.jpg" alt="фото мужчины" />
+                <img
+                  src="./images/team-mob/team4-mob-1x.jpg"
+                  alt="фото мужчины"
+                />
               </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
