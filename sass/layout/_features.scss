@@ -54,6 +54,9 @@
   text-transform: uppercase;
   color: var(--primary-black-color);
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features-list__text {
